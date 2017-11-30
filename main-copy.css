@@ -1,0 +1,64 @@
+body {
+  background: #eae8dc;
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 500px;
+  height: 420px;
+  background: none;
+}
+
+.lightning {
+  position: absolute;
+  top: 16.5%;
+  left: 25%;
+  width: 50%;
+  height: 67%;
+
+  z-index: 2;
+}
+
+.lightning * {
+  /*background: #e74f41;*/
+  background: #ae2c2b;
+}
+
+.lightning-top {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 40%;
+  height: 32%;
+
+  -webkit-clip-path: polygon(0 0, 0% 100%, 37% 100%);
+  clip-path: polygon(0 0, 0% 100%, 37% 100%);
+}
+
+.lightning-bottom-left {
+  position: absolute;
+
+  top: 35%;
+  left: 20%;
+  width: 31%;
+  height: 50%;
+
+  -webkit-clip-path: polygon(32% 0, 100% 0, 100% 100%);
+  clip-path: polygon(32% 0, 100% 0, 100% 100%);
+}
+
+.lightning-bottom-right {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: 25%;
+  height: 18%;
+
+  -webkit-clip-path: polygon(0 0, 65% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 65% 0%, 100% 100%, 0% 100%);
+}
